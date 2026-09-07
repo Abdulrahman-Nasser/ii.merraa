@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>13 • 09 | Happy Birthday My Love❤️</title>
+
+    <meta name="description"
+          content="A special birthday surprise filled with beautiful memories.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         OPENING SCREEN
+    ========================================== -->
+
+    <section id="opening" class="opening">
+
+        <div class="opening-content">
+
+            <div class="small-date">
+                13 • 09
+            </div>
+
+            <div class="heart-icon">♡</div>
+
+            <h1>
+                I have a little<br>
+                surprise for you
+            </h1>
+
+            <p>
+                Some memories are too beautiful<br>
+                to fit into words.
+            </p>
+
+            <button id="openButton" class="open-button">
+                <span>Open Your Surprise</span>
+                <span class="arrow">→</span>
+            </button>
+
+        </div>
+
+        <div class="floating-hearts">
+            <span>♡</span>
+            <span>♡</span>
+            <span>♡</span>
+            <span>♡</span>
+            <span>♡</span>
+            <span>♡</span>
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         MAIN WEBSITE
+    ========================================== -->
+
+    <main id="mainContent" class="main-content">
+
+
+        <!-- MUSIC -->
+
+        <audio id="birthdayMusic" loop>
+            <source src="music/birthday.mp3" type="audio/mpeg">
+        </audio>
+
+        <button id="musicButton" class="music-button">
+            <span id="musicIcon">♫</span>
+        </button>
+
+
+        <!-- =====================================
+             HERO
+        ====================================== -->
+
+        <section class="hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    SAVE THIS DATE
+                </p>
+
+                <div class="big-date">
+                    13
+                    <span>/</span>
+                    09
+                </div>
+
+                <h1>
+                    Happy Birthday
+                    <br>
+                    <em>My Favorite Person</em>
+                </h1>
+
+                <p class="hero-description">
+                    Today isn't just another day.
+                    <br>
+                    It's the day the world became a little more beautiful.
+                </p>
+
+                <div class="scroll-down">
+                    <span>Scroll to discover</span>
+                    <div class="line"></div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             MESSAGE
+        ====================================== -->
+
+        <section class="message section">
+
+            <div class="container">
+
+                <p class="section-label">
+                    A LITTLE MESSAGE
+                </p>
+
+                <h2>
+                    For someone who makes<br>
+                    ordinary moments feel <em>special.</em>
+                </h2>
+
+                <div class="divider">♡</div>
+
+                <p class="message-text">
+                    Happy Birthday to someone incredibly special.
+                    I hope this new year of your life brings you
+                    everything your heart wishes for, countless reasons
+                    to smile, and moments that become memories you'll
+                    want to keep forever.
+                </p>
+
+                <p class="message-text">
+                    And since memories are better than words...
+                    here's a little collection of some of my favorite ones.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             MEMORIES
+        ====================================== -->
+
+        <section class="memories section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        OUR MEMORIES
+                    </p>
+
+                    <h2>
+                        Little moments,
+                        <em>forever memories.</em>
+                    </h2>
+
+                    <p>
+                        Replace the photos below with your own memories.
+                    </p>
+
+                </div>
+
+
+                <div class="gallery">
+
+
+                    <!-- MEMORY 01 -->
+
+                    <div class="memory-card large"
+                         onclick="openImage('images/memory1.jpg')">
+
+                        <img src="images/memory1.jpg"
+                             alt="Our memory">
+
+                        <div class="memory-overlay">
+
+                            <span>01</span>
+
+                            <h3>
+                                The Beginning
+                            </h3>
+
+                            <p>
+                                Where everything started.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MEMORY 02 -->
+
+                    <div class="memory-card"
+                         onclick="openImage('images/memory2.jpg')">
+
+                        <img src="images/memory2.jpg"
+                             alt="Our memory">
+
+                        <div class="memory-overlay">
+
+                            <span>02</span>
+
+                            <h3>
+                                That Day
+                            </h3>
+
+                            <p>
+                                One of my favorite memories.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MEMORY 03 -->
+
+                    <div class="memory-card"
+                         onclick="openImage('images/memory3.jpg')">
+
+                        <img src="images/memory3.jpg"
+                             alt="Our memory">
+
+                        <div class="memory-overlay">
+
+                            <span>03</span>
+
+                            <h3>
+                                Your Smile
+                            </h3>
+
+                            <p>
+                                A moment worth remembering.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MEMORY 04 -->
+
+                    <div class="memory-card"
+                         onclick="openImage('images/memory4.jpg')">
+
+                        <img src="images/memory4.jpg"
+                             alt="Our memory">
+
+                        <div class="memory-overlay">
+
+                            <span>04</span>
+
+                            <h3>
+                                Favorite Moment
+                            </h3>
+
+                            <p>
+                                I wish we could live it again.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MEMORY 05 -->
+
+                    <div class="memory-card wide"
+                         onclick="openImage('images/memory5.jpg')">
+
+                        <img src="images/memory5.jpg"
+                             alt="Our memory">
+
+                        <div class="memory-overlay">
+
+                            <span>05</span>
+
+                            <h3>
+                                Another Beautiful Day
+                            </h3>
+
+                            <p>
+                                Another memory to keep forever.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MEMORY 06 -->
+
+                    <div class="memory-card"
+                         onclick="openImage('images/memory6.jpg')">
+
+                        <img src="images/memory6.jpg"
+                             alt="Our memory">
+
+                        <div class="memory-overlay">
+
+                            <span>06</span>
+
+                            <h3>
+                                Always
+                            </h3>
+
+                            <p>
+                                And hopefully many more to come.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             TIMELINE
+        ====================================== -->
+
+        <section class="timeline-section section">
+
+            <div class="container">
+
+                <p class="section-label">
+                    OUR STORY
+                </p>
+
+                <h2>
+                    From one memory<br>
+                    <em>to another.</em>
+                </h2>
+
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-number">
+                            01
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <span>
+                                THE BEGINNING
+                            </span>
+
+                            <h3>
+                                The moment everything changed.
+                            </h3>
+
+                            <p>
+                                Every beautiful story has a beginning.
+                                This was ours.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-number">
+                            02
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <span>
+                                THE MEMORIES
+                            </span>
+
+                            <h3>
+                                So many moments worth keeping.
+                            </h3>
+
+                            <p>
+                                The laughs, the random conversations,
+                                the little moments and everything between.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-number">
+                            03
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <span>
+                                TODAY
+                            </span>
+
+                            <h3>
+                                Celebrating you.
+                            </h3>
+
+                            <p>
+                                Today is about you, your smile,
+                                your dreams and everything ahead.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-number">
+                            04
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <span>
+                                THE FUTURE
+                            </span>
+
+                            <h3>
+                                More memories to come.
+                            </h3>
+
+                            <p>
+                                This isn't the end of the story.
+                                It's just another beautiful chapter.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             FINAL MESSAGE
+        ====================================== -->
+
+        <section class="final-section">
+
+            <div class="final-overlay"></div>
+
+            <div class="final-content">
+
+                <div class="heart">
+                    ♥
+                </div>
+
+                <p class="section-label">
+                    ONE LAST THING
+                </p>
+
+                <h2>
+                    Here's to another year
+                    <br>
+                    of beautiful <em>memories.</em>
+                </h2>
+
+                <p class="final-text">
+                    May your days be filled with happiness,
+                    your heart with peace,
+                    and your life with everything you've ever wished for.
+                </p>
+
+                <div class="final-date">
+                    13 • 09
+                </div>
+
+                <p class="final-love">
+                    Happy Birthday ❤️
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <div>
+                Made with <span>♥</span> for a very special person.
+            </div>
+
+            <div>
+                13 • 09
+            </div>
+
+        </footer>
+
+
+    </main>
+
+
+    <!-- =========================================
+         IMAGE LIGHTBOX
+    ========================================== -->
+
+    <div id="lightbox" class="lightbox">
+
+        <button class="close-lightbox"
+                onclick="closeImage()">
+            ×
+        </button>
+
+        <img id="lightboxImage" src="" alt="Memory">
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
