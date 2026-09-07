@@ -12,8 +12,94 @@ const musicButton = document.getElementById("musicButton");
 const musicIcon = document.getElementById("musicIcon");
 
 
+
 /* =========================================
-   OPEN WEBSITE + START MUSIC
+   TRY MUSIC IMMEDIATELY ON PAGE LOAD
+========================================= */
+
+window.addEventListener("load", async () => {
+
+    try {
+
+        music.volume = 1.0;
+
+        await music.play();
+
+        musicButton.classList.add("playing");
+
+        musicIcon.textContent = "♫";
+
+        console.log("Music started automatically.");
+
+    } catch (error) {
+
+        console.log("Browser blocked autoplay.");
+
+        /*
+         If autoplay is blocked, start the music
+         automatically after the FIRST interaction
+         anywhere on the page.
+        */
+
+        const startMusic = async () => {
+
+            try {
+
+                await music.play();
+
+                musicButton.classList.add("playing");
+
+                musicIcon.textContent = "♫";
+
+                document.removeEventListener(
+                    "click",
+                    startMusic
+                );
+
+                document.removeEventListener(
+                    "touchstart",
+                    startMusic
+                );
+
+                document.removeEventListener(
+                    "keydown",
+                    startMusic
+                );
+
+            } catch (error) {
+
+                console.log("Music could not start.");
+
+            }
+
+        };
+
+        document.addEventListener(
+            "click",
+            startMusic,
+            { once: true }
+        );
+
+        document.addEventListener(
+            "touchstart",
+            startMusic,
+            { once: true }
+        );
+
+        document.addEventListener(
+            "keydown",
+            startMusic,
+            { once: true }
+        );
+
+    }
+
+});
+
+
+
+/* =========================================
+   OPEN WEBSITE
 ========================================= */
 
 openButton.addEventListener("click", async () => {
@@ -39,6 +125,7 @@ openButton.addEventListener("click", async () => {
     }
 
 });
+
 
 
 /* =========================================
@@ -76,6 +163,7 @@ musicButton.addEventListener("click", async () => {
 });
 
 
+
 /* =========================================
    IMAGE LIGHTBOX
 ========================================= */
@@ -91,6 +179,7 @@ function openImage(imagePath) {
     lightbox.classList.add("active");
 
     document.body.style.overflow = "hidden";
+
 }
 
 
@@ -103,8 +192,9 @@ function closeImage() {
 }
 
 
+
 /* =========================================
-   CLOSE LIGHTBOX BY CLICKING OUTSIDE
+   CLOSE LIGHTBOX
 ========================================= */
 
 lightbox.addEventListener("click", (event) => {
@@ -116,6 +206,7 @@ lightbox.addEventListener("click", (event) => {
     }
 
 });
+
 
 
 /* =========================================
@@ -133,8 +224,9 @@ document.addEventListener("keydown", (event) => {
 });
 
 
+
 /* =========================================
-   PREVENT PAGE SCROLL BEFORE OPENING
+   PAGE LOCK
 ========================================= */
 
 document.body.classList.add("locked");
